@@ -1,0 +1,1 @@
+function a(b){c?b():a.a.push(b)}a.a=[];var c=!1;a.b=function(){if(!c){for(var b=0;b<a.a.length;b++)try{a.a[b]()}catch(d){}c=!0;delete a.a;delete a.b}};window.addEventListener?window.addEventListener("load",a.b,!1):window.attachEvent?window.attachEvent("onload",a.b):window.onload=a.b;

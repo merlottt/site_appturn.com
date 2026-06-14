@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/" />
+<title>  Zany Zombies</title>
+<!--script>!function(a,b,c,d,e){function g(a,c,d,e){var f=b.getElementsByTagName("script")[0];a.src=e,a.id=c,a.setAttribute("class",d),f.parentNode.insertBefore(a,f)}a.Mobify={points:[+new Date]};var f=/((; )|#|&|^)mobify=(\d)/.exec(location.hash+"; "+b.cookie);if(f&&f[3]){if(!+f[3])return}else if(!c())return;b.write('<plaintext style="display:none">'),setTimeout(function(){var c=a.Mobify=a.Mobify||{};c.capturing=!0;var f=b.createElement("script"),h="mobify",i=function(){var c=new Date;c.setTime(c.getTime()+3e5),b.cookie="mobify=0; expires="+c.toGMTString()+"; path=/",a.location=a.location.href};f.onload=function(){if(e)if("string"==typeof e){var c=b.createElement("script");c.onerror=i,g(c,"main-executable",h,mainUrl)}else a.Mobify.mainExecutable=e.toString(),e()},f.onerror=i,g(f,"mobify-js",h,d)})}(window,document,function(){var a=/webkit|msie\s10|(firefox)[\/\s](\d+)|(opera)[\s\S]*version[\/\s](\d+)|3ds/i.exec(navigator.userAgent);return a?a[1]&&+a[2]<4?!1:a[3]&&+a[4]<11?!1:!0:!1},
+
+// path to mobify.js
+"../js/mobify.min.js",
+
+// calls to APIs go here
+function() {
+  var capturing = window.Mobify && window.Mobify.capturing || false;
+
+  if (capturing) {
+    Mobify.Capture.init(function(capture){
+      var capturedDoc = capture.capturedDoc;
+
+      var images = capturedDoc.querySelectorAll("img, picture");
+      Mobify.ResizeImages.resize(images);
+        
+      // Render source DOM to document
+      capture.renderCapturedDoc();
+    });
+  }
+});
+</script-->
+
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link href="/css/reset_style.css" rel="stylesheet" type="text/css">
+<link href="/css/style.min.css" rel="stylesheet" type="text/css">
+<link href="/css/typeplate.min.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="../js/respond.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/mobile.js"></script>
+<script src="../js/jquery.fittext.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35890631-2', 'appturn.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<script src="../js/jquery.flexslider-min.js"></script>
+<script src="../js/TweenMax.min.js"></script>
+<script src="../js/jquery.superscrollorama.js"></script>
+<script src="../js/jquery.fittext.js"></script>
+<script>
+$(function(){
+$('h2').fitText(2, { minFontSize: 36, maxFontSize: 48 });
+$('h4').fitText(2, { minFontSize: 12, maxFontSize: 22 });	
+
+    $('#select').click(function(){
+		TweenMax.to($('#drop'), .5, {css:{top: 0, opacity:1}, ease:Quad.easeOut})
+	});
+	$('#close').click(function(){
+		TweenMax.to($('#drop'), .5, {css:{top: -300, opacity:0}, ease:Quad.easeIn})
+	});});
+
+</script>
+
+<link rel="stylesheet" href="/css/flexslider.min.css" type="text/css" media="screen" />
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=483899068300320";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+     <div id="drop">          
+        	<ul>
+            	<li> <img src="img/close.png" id="close" />
+            	<li> <a href="about.html">About</a> </li>
+                <li> <a href="games/">Games</a> </li>
+                <li> <a href="services.html">Services</a> </li>
+				<li> <a href="careers/">Careers</a> </li>
+                <!--<li> <a href="">Contact</a> </li>-->
+            </ul>
+     </div>
+	 <header id="header">
+    	<div class="wrapper">
+            <div id="logo">
+            	<a href="/">Appturn</a>
+                <img src="img/logo.gif" alt="logo" width=""  height="" />
+            </div> 
+            <div id="nav">
+               <ul><li class="first"><a href="about.html" title="About" >About</a></li>
+<li class="selected"><a href="games/" title="Games" >Games</a></li>
+<li><a href="services.html" title="Services" >Services</a></li>
+<li class="last"><a href="careers/" title="Careers" >Careers</a></li>
+</ul>
+            </div>   
+            <a id="select"></a>           
+            <a href="http://www.facebook.com/Appturn" id="fb" target="_blanc">Facebook</a>
+            <a href="http://www.twitter.com/Appturn" id="twt" target="_blanc">Twitter</a>
+        </div>
+    </header>	
+
+    <div id="arrows"  class="hide">
+     	<a class="prev" href="games/mazemash.html">
+        </a>
+        <a class="next" href="games/slingshot-cowboy.html">
+        </a>
+    </div>
+
+	<div id="main">
+		<div class="zany-zombies">
+    		<div class="wrapper">
+            	<h2 style="padding:48px 0 0">Zany Zombies</h2>
+			    
+				<img src="/assets/components/phpthumbof/cache/zz-icon.637e72e949dc6a550bec3ade571cd00a4.png" />
+				<h4>A funny physics-based shooting game. Try your skills in the incredible battles against crafty zombies!
+
+</h4>
+				<a id="appstore" href="https://itunes.apple.com/us/app/zany-zombies/id562875867"></a>
+				<div class="clearfix"></div>
+               	<div class="padder"></div>
+
+			</div>
+			<div class="wrapper">
+			  	<div class="col one-third">
+			  		<img src="img/idea_zz.gif" alt="the idea for game"  style="margin-top:2px"/>
+			  	</div>
+			 	<div class="col two-third">
+					<h3>The Idea</h3>
+					<p>Nasty zombies are trying to disturb the peace of the living. Beat them back with your magic slingshot and powerful ammo and a little help from friendly ghosts as well.</p>
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Zany-Zombies/609626152384644" data-send="false" data-width="450" data-show-faces="false"></div>
+			  	</div>
+
+				<div class="clearfix"></div>
+               	<div class="padder"></div>
+
+			 	<div class="col one-third" style="margin-left:9px">
+			  	<h3>The Features</h3>
+			  		<p>
+<script type="text/javascript">// <![CDATA[
+$(function() {
+ $('.flexslider').flexslider({
+		  animation: "slide",
+		  controlNav: false,              
+		  directionNav: false,
+		  slideshowSpeed: 4000
+	  }); 
+var controller = new TimelineLite();   
+
+var tw1 = TweenLite.fromTo( $('.zany-zombies h2'), .75, {css:{opacity:0}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut});
+
+var tw2 = TweenLite.fromTo( $('.zany-zombies img'), .75, {css:{opacity:0}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut});
+
+var tw3 = TweenLite.fromTo( $('.zany-zombies h4'), .75, {css:{opacity:0}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut});
+
+
+controller.add([tw1 , tw2 , tw3], 'start', 'stagger', .5); 
+
+});
+// ]]></script>
+</p>
+<div>
+<ul style="margin: 0;">
+<li>FREE TO PLAY!</li>
+<li>Physics based zaniness</li>
+<li>Valuable boosts and magic weapons available at every level</li>
+<li>Endless Survival mode</li>
+<li>Cool accelerometer based mechanics: use tilting and pulling to shoot magic weapons</li>
+<li>Gamecenter leaderboard</li>
+<li>Beat your Facebook friends’ scores!</li>
+<li>Survive all 25 levels with three stars (if you can)!</li>
+</ul>
+</div>
+				</div>
+				<div class="two-third right">
+					<div id="slide">
+						<div class="flexslider-container">
+						  <div class="flexslider">
+							  <ul class="slides">
+<li><img src="img/screen_01.jpg" alt="" /></li>
+<li><img src="img/screen_02.jpg" alt="" /></li>
+<li><img src="img/screen_03.jpg" alt="" /></li>
+<li><img src="img/screen_04.jpg" alt="" /></li>
+<li><img src="img/screen_05.jpg" alt="" /></li>
+</ul>	
+						  </div>
+						</div>
+					</div>
+				</div>
+    		</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+   	<div class="padder"></div>
+
+
+	<footer>
+  <div class="wrapper">
+ 	 <div id="nav_footer">
+    	<ul><li class="first"><a href="about.html" title="About" >About</a></li>
+<li class="selected"><a href="games/" title="Games" >Games</a></li>
+<li><a href="services.html" title="Services" >Services</a></li>
+<li><a href="careers/" title="Careers" >Careers</a></li>
+<li><a href="privacy-policy.html" title="Privacy Policy" >privacy policy</a></li>
+<li class="last"><a href="terms-of-service.html" title="Terms of Service" >terms of service</a></li>
+</ul>
+    </div>   
+    <div class="left">
+      <p>
+        Mobile Game Design & Development Company<br/>
+        Based in San Franciso, CA & Odessa, Ukraine<br/>
+      </p>
+    </div>
+    <div class="right">
+      <p>
+        &copy; 2026, Appturn
+      </p>
+   </div>
+  </div>
+  <div id="creator" class="visuallyhidden"style="position:absolute;bottom:0;right:0; color:#141415; ">Made by <a href="http://www.creaft.com">Creaft</a></div>
+</footer>
+</body>
+</html>

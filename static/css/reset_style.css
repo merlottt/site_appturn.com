@@ -1,0 +1,908 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
+	display: block }
+
+audio[controls], canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1 }
+
+/* ============================================================> BASE STRUCTURE */
+
+html {
+	height: 100%;
+	font-size: 100%;
+	overflow-y: scroll; 
+	overflow-x: hidden; /* Force a scrollbar in non-IE */
+	-webkit-text-size-adjust: 100%; /* Remove iOS text size adjust without disabling user zoom */
+	-ms-text-size-adjust: 100% }
+
+head {
+  display: block }
+
+script:before {
+  content: "<script src=\"" attr(src) "\" type=\"" attr(type) "\">" }
+script:after {
+  content: "</script>" }
+
+body {	
+	margin: 0 auto;
+	min-height: 100% }
+
+p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldset, menu, h4, h5, h6, img {
+	margin: 0 0 1.625em }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0 }
+
+/* ============================================================> HEADINGS AND SMALL */
+
+	
+small {
+	font-size: 85%; 
+	margin: 0 0 2.2em }
+p, span{
+	margin:0 }
+.text{
+	text-align:justify }
+
+
+/* ============================================================> TABLES */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0 }
+
+th {
+	text-align: left;
+	font-weight: bold }
+
+tr, th, td {
+	padding-right: 1.625em;
+	border-bottom: 0 solid #333;
+	vertical-align:top }
+
+/* ============================================================> FORMS */
+
+form {
+	margin: 0 }
+
+fieldset {
+	border: 0;
+	padding: 0 }
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	width:90% }
+
+textarea.contenteditable {-webkit-appearance: none }
+
+legend {
+	*margin-left: -7px }
+
+button {  width: auto; overflow: visible }
+
+button, input, select, textarea {
+	margin: 0;
+	vertical-align: middle;
+	*vertical-align: middle }
+
+button, input {
+	line-height: normal;
+	*overflow: visible }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button }
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box }
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box }
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0 }
+
+input[type="text"], textarea, select {	
+	border:1px solid #94846e;
+	color:#94846e;
+	background:#FFF;
+	display: block;
+	border-radius: 0 2px 2px 0; 
+	padding: 0 0 0 20px;
+	margin-bottom: 36px }
+	input[type="text"]:first-child{
+		margin-top: 0
+	}
+	input[type="text"]:focus, textarea:focus{
+		border:1px solid #4ea7e1 }
+	input[type="text"]  {
+		width:190px;
+		height: 52px }
+	select { width: 190px; height: 54px; padding-top: 15px; padding-bottom: 15px}
+input[type="radio"] { vertical-align: text-bottom }
+input[type="checkbox"] { vertical-align: bottom }
+.iem7 input[type="checkbox"] { vertical-align: baseline }
+
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer }
+	
+input[type="submit"], input[type="text"], textarea, option, select { font-family:'Cambria', Georgia, serif; font-size: 18px  }
+.text-input { background: url(/img/labels.gif) no-repeat; width: 59px; height: 54px; display: block; float: left }
+	.name_label    { background-position: 0 0 }
+	.email_label   { background-position: -59px 0 }
+	.phone_label   { background-position: -118px 0 }
+	.company_label { background-position: -177px 0 }	
+	.resume_label  { background-position: -236px 0; width: auto !important }
+	.quest_label   { background-position: -295px 0 }
+	.posit_label   { background-position: -354px 0;}
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+ /*  border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;*/
+}
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd }
+
+	form .grey{
+		height: 80px;
+		width: auto;
+		padding: 24px 0;
+		display:block;
+		margin-bottom: -24px }
+	form .button{
+        display: block;
+		background: #4ea7e1;
+		border: 0;
+		color: #FFF;
+		height: 80px;
+		width: 200px;
+		line-height: 80px;
+		text-align:center;
+        margin: 0 auto;
+		border-radius: 4px }
+		form .button:hover, form .button:focus{
+			background-color: #047ecd
+		}
+		
+.error {
+	color: #4ea7e1;
+	background: none;
+    height: auto;
+	width: auto;
+    margin-top: -35px;
+	line-height: 35px;
+    text-align: left;
+    width: 100% }
+	
+ option {
+	display: block !important;
+	width: 100% !important;
+	line-height: 54px;
+	text-align: left
+}
+
+/* ============================================================> LISTS */
+
+ul, ol {
+	list-style-position: inside ;
+	padding: 0;
+	margin-left: 2em;
+	list-style: none;
+}
+
+ol { list-style-type: decimal }
+
+li ul, li ol {
+	margin: 0 1.625em }
+
+dl dd {
+	margin-left: 1.625em }
+
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none }
+
+/* ============================================================> LINKS */
+
+a {
+	color:#047ECD /*39b5f5*/;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#39b5f5 ;
+	text-decoration: underline }
+
+a:focus {
+	outline: thin dotted;
+	position:relative;
+	top:1px }
+
+a:hover, a:active {
+	outline: none }
+
+#nav ul li a:link { -webkit-tap-highlight-color: none }
+
+a[href = ""] {
+
+  color: white;
+  font-size: x-large }
+
+a[href ^= http] {
+  display: inline-block;
+
+ }
+/* ============================================================> VISUAL MEDIA */
+
+figure {
+	margin: 0 }
+
+img, object, embed, video {
+	max-width: 100%;
+	_width: 100% }
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;/* Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images */
+	height: auto }
+
+svg:not(:root) {
+	overflow: hidden }
+
+img[src $= .png] {
+  filter: invert(100%) }
+/* ============================================================> ABBREVIATIONS */
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #333;
+	cursor: help }
+
+/* ============================================================> MARKED/INSERTED/DELETED TEXT */
+
+ins, mark {
+	text-decoration: none }
+
+mark {
+	background: #ff0 }
+
+ins {
+	background: #ff9 }
+
+del {
+	text-decoration: line-through }
+
+
+/* ============================================================> OTHERS */
+
+strong, b, dt {
+	font-weight: bold }
+
+dfn {
+	font-style: italic }
+
+var, address {
+	font-style: normal }
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline }
+
+sup {
+	top: -0.5em }
+
+sub {
+	bottom: -0.25em }
+
+/* ============================================================> HELPER CLASSES */
+
+
+.group:before, .group:after {
+	content: "";
+	display: table }
+
+.group:after {
+	clear: both;
+	visibility:hidden;
+	line-height:0;
+	height:0 }
+
+.group {
+	*zoom: 1 }
+.grey { background: #edede4 }
+.green{ background: #089109 }
+/****
+CLEARFIX
+*****/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0 }
+.clearfix { display: inline-block }
+.clearfix { display: block; zoom: 1 }
+
+::-moz-selection{ background: #f4d201; color:#000; text-shadow: none }
+::selection { background:#f4d201; color:#000; text-shadow: none }
+
+
+.gifhidden {position: absolute; left: -100% }
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr }
+
+.hidden,.hide { display: none }
+/* Hide only visually, but have it available for screenreaders:  */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden }
+
+/* ============================================================> PRIMARY STYLES */
+
+
+.wrapper{
+	margin: 0 auto;
+	padding:8px;
+	width:auto;
+	position:relative;
+	display:block;
+	overflow:hidden }
+		#header .wrapper{ padding: 0 }		
+
+#header{		
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 300 }
+	
+	#header , #contact-tabs .nav li a, .white{		
+		background-color: rgb(242, 242, 242);
+		background-color: rgba(242, 242, 242, 0.9);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#55242242242, endColorstr=#55242242242);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#55242242242, endColorstr=#55242242242)";
+		padding: 0 }
+	
+	#logo{
+		height: 51px;
+		line-height: 51px;
+		text-align: left;
+		background: #f4d201 }
+		#logo a{
+			color: #211922;
+			font-size: 28px;
+			font-family: 'Melbourne reg'; 
+			font-weight: normal;
+			display: inline;
+			margin-left: 24px;
+			vertical-align: top }
+			#logo a:hover{ text-decoration: none }	
+		#logo img{ margin: 2px 0 0 6px; display: inline; max-width: 48px; }
+	
+	
+	#nav, #nav_footer { width: auto; display: none  }
+	#drop { position: fixed; z-index: 400; top: -300px; width:100%; opacity: 0 }	
+		#drop ul {
+			background-color: rgb(238, 238, 238);
+			background-color: rgba(238, 238, 238, 0.9);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99238238238, endColorstr=#99238238238);
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99238238238, endColorstr=#99238238238)";
+			padding: 0 }
+		#select { 
+			display: block; 
+			position: absolute; 
+			top:   4px; 
+			right: 100px;
+			background: transparent url(/img/select.png) no-repeat right;
+			width:  49px;
+			height: 49px }
+			
+		#nav ul, #drop ul, #nav_footer ul{ list-style: none; margin:0 }
+			#nav ul li, #nav_footer ul li  { margin: 0 auto }
+			#drop ul li { border-bottom: 1px solid #ccc }
+				#drop ul li:first-child { border: none; height:20px }
+				#nav ul li a, #drop ul li a, #nav_footer ul li a {
+					color: #333 ;	
+					font-family: 'Melbourne bold';
+					font-size: 14px;
+					font-style:normal;
+					text-transform: uppercase;
+					display: block;
+					padding:16px 0; }
+							#nav ul li a:hover,
+							#nav ul li a:active, 
+							#nav ul li.selected a,
+							#drop ul li a:hover,
+							#drop ul li a:active,
+                            #nav_footer ul li a:hover,
+                            #nav_footer ul li.selected a{
+								color: #f4d201;
+								text-shadow: -1px 1px 1px rgba(0,0,0,0.3);
+								text-decoration: none;
+
+                                -webkit-transition: all 0.75s ease;
+                                -moz-transition: all 0.75s ease;
+                                -o-transition: all 0.75s ease;
+                                transition: all 0.75s ease}
+							#drop ul li a:hover,
+							#drop ul li a:active, 
+							#drop ul li a:focus{ background-color: #999 }	
+						#drop ul li:first-child { text-align: right }
+							#close { margin: 0 }
+                #nav_footer ul li a { font-size:12px;color: #e8e8e8 }
+				#fb, #twt{
+					width: 45px;
+					height: 45px;
+					display: block;
+					text-indent: -9000px;
+					background: url(/img/sprite_social.png) no-repeat;
+					position: absolute;
+					top: 4px }
+				#fb{
+					background-position: 0 0;
+					right: 52px }
+					#fb:hover{
+						background-position: -90px 0; background-color: transparent !important }
+				#twt{
+					background-position: -45px 0;
+					right: 4px }
+					#twt:hover{
+						background-position: -135px 0; background-color: transparent !important }
+						
+						
+	#main{
+		padding-top: 51px;
+		display:block;
+		height:auto;
+		position: relative }
+	
+	.scroll{ text-align: center; cursor: pointer }
+	
+	.col span.half{ margin: 0 0 36px; display:block;   }
+		
+	a.button{
+		background: #047ecd;
+		color: #b0e0ff;
+		height: 54px;
+		width: 176px;
+		line-height: 54px;
+		text-align:center;
+		display: inline-block;
+		margin-top: 8px;				
+		border-radius: 4px }
+		a.button:hover, a.button:active{
+			background: #4ea7e1 }
+			
+		 .item div.one-third { margin: 0 0 36px }
+		 
+	.item{ padding: 16px 8px; position: relative }
+	
+	.item .one-third {
+		display: block;
+		vertical-align: top }
+
+	.gridContainer {
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		padding-left: 1%;
+		padding-right: 1%;
+		position:relative }
+	#LayoutDiv1 {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block }
+		
+		
+	footer{
+		width: 100%;
+		background: #141415;
+		color: #e8e8e8;
+		padding: 18px 0 }
+        footer{ font-size:14px }
+		footer p + p{
+			text-indent: 0 }
+		
+	.left, .right, #nav, .col{ float: none }
+	.padder{
+			padding:16px;
+			display:block }
+/* Contact */
+	#contact-tabs, #contact-tabs ul { margin: 0; width: auto; list-style: none }
+	#contact-tabs ul li a { display: block; border-bottom: 1px solid #666; color: #666 }
+		#contact-tabs ul li a:hover { background: #333; color: white }
+		#contact-tabs ul li:last-child a { border: none }
+	
+	#contact-tabs .nav { overflow: hidden }
+	#contact-tabs .nav li { width: 100%;  float: none; margin: 0 0 1px }
+		#contact-tabs .nav li.last { margin-right: 0 }
+			#contact-tabs  .nav li a { height: 72px;  border: 0; }
+				#contact-tabs li a.current,#contact-tabs li a.current:hover { background-color: #f4d201 !important }	
+				#contact-tabs li a h4 { line-height: 72px; text-shadow: none } 
+				#contact-tabs .nav li a:hover, #contact-tabs .nav li a:focus {
+                    background: #999;
+                    text-decoration: none;
+                    -webkit-transition: all 0.75s ease;
+                    -moz-transition: all 0.75s ease;
+                    -o-transition: all 0.75s ease;
+                    transition: all 0.75s ease}
+/*	#contact-tabs .half{ width: 460px }*/
+
+
+/* Portfolio */
+
+    .portfolioList { background: url(/img/port_bg.gif) repeat-x center center }
+        .portfolioList .icon { max-width: 110px }
+    .slingshot-cowboy  { background: url(/img/bg_ss.jpg) repeat-x center top }
+    .zany-zombies      { background: url(/img/bg_zz.jpg) repeat-x center top }
+    .battle-bugs       { background: url(/img/bg_bb.jpg) repeat-x center top }
+    .mazemash       { background: url(/img/GrassTyle.png) repeat-x center top }
+        .battle-bugs h2,.battle-bugs  h4 { color: #ddd }
+    #bull, #gopher, #bug, #schmele, #ass, #skel {
+       position: absolute;
+    }
+        #bull    { background: url(/img/bull.png) no-repeat;   width: 247px; height: 215px; right: 0 }
+        #gopher  { background: url(/img/gopher.png) no-repeat; width: 244px; height: 150px; left: 0; top: 170px }
+        #bug     { background: url(/img/bug.png) no-repeat;   width: 62px; height: 66px; left: 0 }
+        #schmele { background: url(/img/schmele.png) no-repeat; width: 110px; height: 117px; right: 0 }
+        #ass{ background: url(/img/Assasin1.png) no-repeat; width: 200px; height: 200px; right: 0 }
+        #skel{ background: url(/img/Skeleton_Render.png) no-repeat; width: 200px; height: 200px; left: 0;  top: 170px }
+
+
+    #slide { background: url(/img/slide.png) no-repeat; width:  273px; height: 545px; padding: 80px 0 0; margin: 0 auto ; box-sizing:border-box; -moz-box-sizing:border-box; }
+	#appstore{
+		background: url(/img/appstore.png) no-repeat -179px 0;
+		display:block;
+		width: 179px;
+		height: 53px;
+		float: none;
+		cursor: pointer;
+		margin: 0 auto }
+		#appstore:hover, #appstore:active{ background-position: 0 0 }
+
+	#arrows{
+		position: fixed;		
+		top: 300px;
+		left: 0;
+		width:100%;
+		height:79px;
+		z-index: 999;
+	}
+		#arrows a{
+			position: absolute;
+			background:url(/img/arrows.png) no-repeat;
+			top: 0;
+			width: 141px;
+			height: 79px;
+		}	
+			#arrows a:hover, #arrows a:active{
+				cursor: pointer;
+			}
+				#arrows .prev:hover{ left:0  }
+				#arrows .next:hover{ right:0 }
+		.prev{
+			left: -81px;
+			background-position: -141px 0 !important
+		}
+		.next{
+			right: -81px;
+			background-position: 0 0
+		}
+
+/* About */	
+	.about {
+		height: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		width: 100%;			
+	}
+		 .about .wrapper{ min-height: 200px }
+		 
+	#pas { background-color: #222; color: #e8e8e8 }
+	#ded { background-color: #f5dd4d }
+	#cha { background-color: #ddd    }
+	#rel { background-color: #1b75bb }	
+	
+	.about h4 {
+		font: 1.5%/64px;
+		margin-bottom: 24px 
+	}
+			#pas h4 { color: #f5dd4d }
+			#ded h4 { color: #222 }
+			#cha h4 { color: #1b75bb }
+			#rel h4 { color: #ddd }
+			
+	.about p { font-size: 24px; line-height: 1.425rem }
+		/*.about .text,*/
+		.about .img,
+		#star1,
+		#star2,
+		#gleam,
+		#cloud1,
+		#cloud2 {
+			position: absolute;
+		}
+		.about .text { margin: 36px 18px; position: relative; z-index:11 }
+		.about img { display: none }
+		
+			#cha .img { z-index: 10	}					
+			#ded .img, 
+			#rel .img { z-index: 1  }
+			#gleam    { z-index: 10 }
+			#star1,	
+			#star2    { z-index: 1  }
+			
+/* Services */
+	#full, #port, #art, #test, #gd { text-align: left }
+	#full h4, #port h4, #art h4, #test h4, #gd h4 { padding: 0 0 7px 52px }
+	#full p, #port p, #art p, #test p, #gd p { margin-top:-7px }
+		#full h4{
+			background:url(/img/full.png) no-repeat 0 0 ;
+		}
+		#port h4{
+			background:url(/img/port.png) no-repeat 0 0 ;
+		}
+		#art h4{
+			background:url(/img/art.png) no-repeat 0 0 ;
+		}
+		#test h4{
+			background:url(/img/test.png) no-repeat 0 0 ;
+		}
+		#gd h4{
+			background:url(/img/gd.png) no-repeat 0 0 ;
+		}
+	.offer li { display:inline-block; margin: 0 24px 0 0; text-align: center; line-height: 14px; vertical-align:top}
+						
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	.gridContainer {
+		width: 90.675%;
+		padding-left: 1.1625%;
+		padding-right: 1.1625% }
+	#LayoutDiv1 {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block }	
+	
+	 a.button  		    { width: 224px  }
+		.item  		    { padding: 24px }
+	 #submit_btn		{ width: 356px; background-position: 30% 50%  }
+	 input[type="text"], select { width: 65%  }
+	
+}
+@media only screen and (min-width: 640px) {
+    ul { list-style: disc}
+	#header  { height: 102px }
+		#header .wrapper, .wrapper { padding: 0 16px }		
+
+			
+		#logo{ width: 200px; height: 102px; line-height: 102px; float: left }
+			#logo img{ margin-top: 20px; max-width: 100% }
+			
+		#select, #drop { display: none }					
+		#nav, #nav_footer { display: block }
+                     #nav { float: left; width: 58%  }
+              #nav_footer { width: 100% }
+			#nav ul, #nav_footer ul{ position: relative }
+				#nav ul li, #nav_footer ul li{
+					display: inline;
+					margin-left: 10px;
+					height: 102px;
+					line-height: 102px }	
+						#nav ul li a, #nav_footer ul li a{ display: inline; padding: 40px 0 }
+				#fb, #twt { top: 30px   }
+					  #fb { right: 80px }
+					 #twt { right: 26px }
+					 
+	#main{ padding-top: 102px }
+
+		#fs{
+			background: url(/img/green.png) no-repeat }
+			#fs:hover, #fs:active, #fs.active{
+				background: url(/img/green-active.png) no-repeat }
+		#ss{
+			background: url(/img/blue.png) no-repeat }
+			#ss:hover, #ss:active, #ss.active{
+				background: url(/img/blue-active.png) no-repeat }
+		#ts{
+			background: url(/img/black.png) no-repeat }
+			#ts:hover, #ts:active, #ts.active{
+				background: url(/img/black-active.png) no-repeat }				
+	
+	#contact-tabs .nav li { width: 33.2%;  float: left; margin: 0 }
+	
+	.col{
+		float: left;
+		text-align: left;
+		display: block }
+		
+	.half{ width: 50% }	
+	.col span.half{ margin:0 24px 36px 0; padding:8px 0 0 52px; width: 40% }
+		.col span.half:last-child{ margin-right: 0 }
+		
+	.one-third{ width: 30% }
+	.two-third{ width: 60% }
+	
+	.item .one-third {
+			float: left;
+			padding:0 32px 0 0 }
+			.item  .one-third:last-child { padding:0 }	
+			
+	.left{
+		float: left;
+		text-align: left }
+	.right{
+		float: right;
+		text-align: right }
+		
+	.padder{ padding: 32px }
+
+    #slide { margin-top: -60px }
+
+			.about .wrapper{ min-height: 400px }
+			.about .text { margin: 72px 36px }
+			#em  { max-width: 230px; left: 68%; top: 12% }
+			#zhe { max-width: 180px; left: 61%; top: 28% }
+
+			.about img   { display: block }
+				#cha .img { left: 62%; top: 12%  }
+				#ded .img { right: 62%; top: 6%	 }
+				#rel .img { right: 54%; top: 12% }
+				#gleam    { right: 66%; top: 1%  }
+
+			#ded .text p, #rel .text p{ text-align: right }	
+			
+	#full h4, #port h4, #art h4, #test h4, #gd h4 {  margin-left: -52px }
+	.hide  { display: block }
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	.gridContainer {
+		width: 88.2%;
+		max-width: 1232px;
+		padding-left: 0.9%;
+		padding-right: 0.9%;
+		margin: auto;}
+	#LayoutDiv1 {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block }
+				
+ 	.wrapper	   { max-width: 1044px }
+	#main .wrapper { max-width: 972px  }
+    #nav { width: 70%  }
+    #nav ul li a, #drop ul li a { font-size: 18px }
+	#appstore { float: none }
+	
+	
+}
+@media only screen and (min-width: 960px) {
+	
+		#logo{	
+			text-align:center;		
+			width: 250px }
+			
+		#nav, #nav_footer{ float: right }
+			#nav ul li, #nav_footer ul li{ margin-left: 24px }
+			
+		.padder{ padding:48px }
+		
+		.wrapper, #header .wrapper{ padding:0 36px }
+		
+		.col span.half{ width: 42% }
+		
+		.item div { margin-bottom: 0 }	
+			
+		#contact-tabs .nav li { margin: 0 1px 0 0 }			
+		
+		#em,
+		#ded img,
+		#cha img { max-width: 300px }
+		#zhe 	 { max-width: 250px }
+}
+
+@media only screen and (min-width: 1025px) {
+	#main	  { padding-top: 102px }
+	.padder{ padding:64px }
+	.about .wrapper { min-height: 500px }
+		.about img { max-width: 100% !important }
+			#pas .img, #cha .img{
+				left: 52%;
+				top: 12%;
+			}
+			#ded .img, #rel .img{
+				right: 62%;
+				top: 12%;
+			}
+			
+	
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+/* ==========================================================================================> PRINT-ONLY STYLES */
+/* Print styles inlined to avoid extra HTTP connection */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: black !important; /* Black prints faster: sanbeiji.com/archives/953 */
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important }
+	body {
+      color: #000;
+      background: #fff }
+    body, article {
+      width: 100%;
+      margin: 0;
+      padding: 0 }
+
+   @page {
+      margin: 2cm }
+	a, a:visited {
+		text-decoration: underline }
+	a[href]:after {
+		content: " (" attr(href) ")" }
+	abbr[title]:after {
+		content: " (" attr(title) ")" }
+	/* Do not show javascript and internal links */
+	a[href^="javascript:"]:after, a[href^="#"]:after {
+		content: "" }
+	/* Printing Tables: css-discuss.incutio.com/wiki/Printing_Tables */
+	thead {
+		display: table-header-group }
+	tr, img, ul {
+		page-break-inside: avoid }
+	img {
+	   max-width: 100% !important }
+	@page {
+		margin: 0.5cm }
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3 }
+	h2, h3 {
+		page-break-after: avoid }
+	 nav, aside {
+      display: none }
+   article {
+	   page-break-before: always }
+	 article a {
+      font-weight: bolder;
+      text-decoration: none }
+
+   article a[href^=http]:after {
+      content:" <" attr(href) "> " }
+}

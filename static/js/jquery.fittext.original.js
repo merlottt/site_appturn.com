@@ -1,0 +1,1 @@
+(function(a){a.d.c=function(f,c){var b={minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY};return this.b(function(){function d(){e.a("font-size",Math.max(Math.min(e.width()/(10*g),parseFloat(b.e)),parseFloat(b.f)))}var e=a(this),g=f||1;c&&a.extend(b,c);d();a(window).resize(d)})}})(jQuery);

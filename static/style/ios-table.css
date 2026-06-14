@@ -1,0 +1,97 @@
+<!--
+	body {
+		font-family: Helvetica, Arial;
+		-webkit-text-size-adjust: none;
+		-webkit-user-select: none;
+		-webkit-box-sizing: border-box;			
+		margin: 0px auto;
+		background:#C5CCD3 url(pinstripes.png);
+		border: 0px;
+		border-bottom-left-radius: 0px 0px;
+		border-bottom-right-radius: 0px 0px;
+		border-top-left-radius: 0px 0px;
+		border-top-right-radius: 0px 0px;
+		font-size: 100%;
+		font-style: inherit;
+		font-weight: inherit;
+		outline: 0px;
+		padding: 0px;
+		text-decoration: none;
+		vertical-align: baseline;
+	}
+	#h_24x4 { width:0; visibility:collapse; }
+	#container { display: block; width:100%; padding-top: 1ex; padding-bottom: 2ex;}
+	/* table section */
+	fieldset { padding:4px 2px 4px 2px; margin:8px; border:0;font-size: 14px;color: #4C656C; }
+	/* single table cell */
+	fieldset > * {
+		background-color: #ffffff;
+		border: 1px solid #D9D9D9;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		margin: 0;
+		padding:10px;
+		text-decoration:none;font-size:inherit;display:block;color:inherit;
+	}
+	/* top table cell */
+	fieldset > .top {
+		-moz-border-bottom-left-radius: 0; -moz-border-bottom-right-radius: 0;
+		-webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0; border-bottom-right-radius: 0px;
+	}
+	/* bottom table cell */
+	fieldset > .bottom {
+		border-top: 0;
+		-moz-border-top-left-radius: 0; -moz-border-top-right-radius: 0;
+		-webkit-border-top-left-radius: 0; -webkit-border-top-right-radius: 0px;
+		border-top-left-radius: 0; border-top-right-radius: 0px;
+	}
+	/* middle table cell */
+	fieldset > .middle {
+		border-top: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+	/* chevron for a table cell */
+	fieldset > .chevron {
+		background-image: url(chevron20.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+	label {
+		display: block;
+		text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 0;
+	}
+	/* table section header */
+	label.head {
+		margin:0;padding-left:1em;padding-bottom:0;
+		line-height: 20px;
+		font-size: 17px;
+		font-weight: bold;
+		color: #4d4d70;
+	}
+	/* table cell text */
+	label.cell, label.cell a {
+		line-height: 20px;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	/* table cell description */
+	label.descript {
+		text-decoration:none; 
+		font-weight:normal; 
+		font-size:14px; 
+	}
+	/* table section description */
+	label.note {
+		text-decoration:none; 
+		font-weight:normal; 
+		font-size:14px; 
+		margin: 0 8px 0 8px;
+	}
+	/* warning modifier for cell/head/notes/etc. */
+	label.warn {color:red;}
+
+-->

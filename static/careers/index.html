@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/" />
+<title>  Careers</title>
+<!--script>!function(a,b,c,d,e){function g(a,c,d,e){var f=b.getElementsByTagName("script")[0];a.src=e,a.id=c,a.setAttribute("class",d),f.parentNode.insertBefore(a,f)}a.Mobify={points:[+new Date]};var f=/((; )|#|&|^)mobify=(\d)/.exec(location.hash+"; "+b.cookie);if(f&&f[3]){if(!+f[3])return}else if(!c())return;b.write('<plaintext style="display:none">'),setTimeout(function(){var c=a.Mobify=a.Mobify||{};c.capturing=!0;var f=b.createElement("script"),h="mobify",i=function(){var c=new Date;c.setTime(c.getTime()+3e5),b.cookie="mobify=0; expires="+c.toGMTString()+"; path=/",a.location=a.location.href};f.onload=function(){if(e)if("string"==typeof e){var c=b.createElement("script");c.onerror=i,g(c,"main-executable",h,mainUrl)}else a.Mobify.mainExecutable=e.toString(),e()},f.onerror=i,g(f,"mobify-js",h,d)})}(window,document,function(){var a=/webkit|msie\s10|(firefox)[\/\s](\d+)|(opera)[\s\S]*version[\/\s](\d+)|3ds/i.exec(navigator.userAgent);return a?a[1]&&+a[2]<4?!1:a[3]&&+a[4]<11?!1:!0:!1},
+
+// path to mobify.js
+"../js/mobify.min.js",
+
+// calls to APIs go here
+function() {
+  var capturing = window.Mobify && window.Mobify.capturing || false;
+
+  if (capturing) {
+    Mobify.Capture.init(function(capture){
+      var capturedDoc = capture.capturedDoc;
+
+      var images = capturedDoc.querySelectorAll("img, picture");
+      Mobify.ResizeImages.resize(images);
+        
+      // Render source DOM to document
+      capture.renderCapturedDoc();
+    });
+  }
+});
+</script-->
+
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link href="/css/reset_style.css" rel="stylesheet" type="text/css">
+<link href="/css/style.min.css" rel="stylesheet" type="text/css">
+<link href="/css/typeplate.min.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="../js/respond.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/mobile.js"></script>
+<script src="../js/jquery.fittext.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35890631-2', 'appturn.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+     <div id="drop">          
+        	<ul>
+            	<li> <img src="img/close.png" id="close" />
+            	<li> <a href="about.html">About</a> </li>
+                <li> <a href="games/">Games</a> </li>
+                <li> <a href="services.html">Services</a> </li>
+				<li> <a href="careers/">Careers</a> </li>
+                <!--<li> <a href="">Contact</a> </li>-->
+            </ul>
+     </div>
+	 <header id="header">
+    	<div class="wrapper">
+            <div id="logo">
+            	<a href="/">Appturn</a>
+                <img src="img/logo.gif" alt="logo" width=""  height="" />
+            </div> 
+            <div id="nav">
+               <ul><li class="first"><a href="about.html" title="About" >About</a></li>
+<li><a href="games/" title="Games" >Games</a></li>
+<li><a href="services.html" title="Services" >Services</a></li>
+<li class="last selected"><a href="careers/" title="Careers" >Careers</a></li>
+</ul>
+            </div>   
+            <a id="select"></a>           
+            <a href="http://www.facebook.com/Appturn" id="fb" target="_blanc">Facebook</a>
+            <a href="http://www.twitter.com/Appturn" id="twt" target="_blanc">Twitter</a>
+        </div>
+    </header>	
+	<div id="main">
+    	<div class="wrapper">
+        	<div class="padder"></div>	            
+        	<div>
+            	<h2>Join us</h2>
+                <h4>Become a valuable team member and join other game, art and 
+development specialists</h4>
+				<div class="clearfix"></div>
+				<div class="padder"></div>	  
+		   </div>
+    	</div>
+		<script src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/polyfill.requestAnimationFrame.js"></script>
+<script src="../js/jquery.superscrollorama.js"></script>
+
+<script type="text/javascript">$(document).ready(function() {var controller = new TimelineLite();   var tw5 = TweenLite.fromTo( $('#main h2'), .5, {css:{opacity:0}, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut});var tw6 = TweenLite.fromTo( $('#main h4'), .5, {css:{opacity:0}, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut});var tw1 = TweenLite.fromTo( $('article'), .75, {css:{opacity:0}, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut});
+controller = $.superscrollorama();/*
+controller.addTween('article', TweenMax.fromTo( $('article'), .25, {css:{opacity:0}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,0,false);
+controller.addTween('#slingshot-cowboy .two-third img', TweenMax.fromTo($('#slingshot-cowboy .two-third img'), .25, {css:{opacity:0, width:'50%'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, width:'100%'}, ease:Quad.easeInOut}),0,0,false);
+controller.addTween('#battle-bugs .one-third',TweenMax.fromTo( $('#battle-bugs .one-third'), .25, {css:{opacity:0}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1}, ease:Quad.easeInOut}),0,0, false);
+controller.addTween('#battle-bugs .two-third img',TweenMax.fromTo( $('#battle-bugs .two-third img'), .25, {css:{opacity:0, width:'50%'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, width:'100%'}, ease:Quad.easeInOut}),0,0, false);*/
+
+
+/* MOBILE IMPLEMENTATION OF SUPERSCROLLORAMA */
+
+			if (Modernizr.touch) {
+				var scrollPos = 0;
+
+				var myScroll = new iScroll('#main >.wrapper', {vScrollbar: true, hScroll: false, vScroll: true, bounce: false, useTransform: false, useTransition: false});
+				function animationLoop () {
+					window.requestAnimationFrame(animationLoop);
+					if (myScroll.y != scrollPos) { 
+						scrollPos = myScroll.y;
+						controller.setScrollContainerOffset(0, -myScroll.y);
+						controller.triggerCheckAnim(true);
+					}
+				}
+				 
+				$("#main >.wrapper").get(0).addEventListener("touchmove", function() {
+					animationLoop ();
+				});
+				
+				animationLoop ();
+			}
+});</script>
+
+<p>			 <article id="senior-fx-developer" class="item portfolioList" > 
+             	<div class="wrapper" onClick="document.location='careers/senior-fx-developer.html'" style="cursor:pointer">
+                        <div style="text-align:left" >
+						    <h3 style="text-align:center">Senior backend Developer for MMOG</h3>
+							<h4>Description</h4>
+							<p>A game studio, which is working on an innovative title in a close partnership with the world-leading publisher, is looking for a backend developer.
+As a Server Game Developer, you’ll be responsible for implementing server-related game features.
+You’ll be working closely with the server team to create scalable infrastructure as well as the client team for feature integration.
+You’ll have to break out of your toolset to push boundaries on technology to deliver the most robust backend to our users.</p>
+							<h5><a href="careers/senior-fx-developer.html">View full description </a></h5>
+                    	</div>
+                 </div>    
+             </article>
+			 <article id="unity-3d-developer" class="item portfolioList" > 
+             	<div class="wrapper" onClick="document.location='careers/unity-3d-developer.html'" style="cursor:pointer">
+                        <div style="text-align:left" >
+						    <h3 style="text-align:center">Unity 3D developer</h3>
+							<h4>Description</h4>
+							<p>We are looking for a Unity3D Game Developer. As a Unity3D Game Developer, you’ll be involved in all stages of game development working on brand new titles with sophisticated game technologies. As a part of our development team you’ll be working in close collaboration with the art and game design team finding creative solutions to challenging problems. If you love to roll-up your sleeves and get dirty with Unity3D in order to deliver the best user experience to our players, you are the one we’re looking for.</p>
+							<h5><a href="careers/unity-3d-developer.html">View full description </a></h5>
+                    	</div>
+                 </div>    
+             </article></p>
+
+		
+	</div>
+	<footer>
+  <div class="wrapper">
+ 	 <div id="nav_footer">
+    	<ul><li class="first"><a href="about.html" title="About" >About</a></li>
+<li><a href="games/" title="Games" >Games</a></li>
+<li><a href="services.html" title="Services" >Services</a></li>
+<li class="selected"><a href="careers/" title="Careers" >Careers</a></li>
+<li><a href="privacy-policy.html" title="Privacy Policy" >privacy policy</a></li>
+<li class="last"><a href="terms-of-service.html" title="Terms of Service" >terms of service</a></li>
+</ul>
+    </div>   
+    <div class="left">
+      <p>
+        Mobile Game Design & Development Company<br/>
+        Based in San Franciso, CA & Odessa, Ukraine<br/>
+      </p>
+    </div>
+    <div class="right">
+      <p>
+        &copy; 2026, Appturn
+      </p>
+   </div>
+  </div>
+  <div id="creator" class="visuallyhidden"style="position:absolute;bottom:0;right:0; color:#141415; ">Made by <a href="http://www.creaft.com">Creaft</a></div>
+</footer>
+</body>
+</html>
